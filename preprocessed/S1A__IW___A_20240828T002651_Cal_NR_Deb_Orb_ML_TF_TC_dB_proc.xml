@@ -1,0 +1,259 @@
+<?xml version="1.0" ?><graph id="Graph">	
+    	<version>1.0</version>	
+    	<node id="Read">			
+      			<operator>Read</operator>			
+      			<sources/>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<file>/home/st-juho/code_testing/S1A_IW_SLC__1SDV_houston_test_1.SAFE/S1A_IW_SLC__1SDV_20240828T002651_20240828T002719_055406_06C201_F8B4.SAFE</file>					
+        					<formatName>SENTINEL-1</formatName>					
+        					<sourceBands/>					
+        					<sourceMasks/>					
+        					<pixelRegion/>					
+        					<geometryRegion/>					
+        					<vectorFile/>					
+        					<polygonRegion/>					
+        					<useAdvancedOptions>false</useAdvancedOptions>					
+        					<copyMetadata>true</copyMetadata>					
+      			</parameters>			
+    	</node>	<node id="Calibration">			
+      			<operator>Calibration</operator>			
+      			<sources>					
+        					<sourceProduct refid="Read"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands/>					
+        					<auxFile>Latest Auxiliary File</auxFile>					
+        					<externalAuxFile/>					
+        					<outputImageInComplex>false</outputImageInComplex>					
+        					<outputImageScaleInDb>false</outputImageScaleInDb>					
+        					<createGammaBand>false</createGammaBand>					
+        					<createBetaBand>false</createBetaBand>					
+        					<selectedPolarisations>VV,VH</selectedPolarisations>					
+        					<outputSigmaBand>false</outputSigmaBand>					
+        					<outputGammaBand>false</outputGammaBand>					
+        					<outputBetaBand>true</outputBetaBand>					
+      			</parameters>			
+    	</node>	<node id="ThermalNoiseRemoval">			
+      			<operator>ThermalNoiseRemoval</operator>			
+      			<sources>					
+        					<sourceProduct refid="Calibration"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<selectedPolarisations>VV,VH</selectedPolarisations>					
+        					<removeThermalNoise>true</removeThermalNoise>					
+        					<outputNoise>false</outputNoise>					
+        					<reIntroduceThermalNoise>false</reIntroduceThermalNoise>					
+      			</parameters>			
+    	</node>	<node id="TOPSAR-Deburst">			
+      			<operator>TOPSAR-Deburst</operator>			
+      			<sources>					
+        					<sourceProduct refid="ThermalNoiseRemoval"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<selectedPolarisations>VV,VH</selectedPolarisations>					
+      			</parameters>			
+    	</node>	<node id="Apply-Orbit-File">			
+      			<operator>Apply-Orbit-File</operator>			
+      			<sources>					
+        					<sourceProduct refid="TOPSAR-Deburst"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<orbitType>Sentinel Precise (Auto Download)</orbitType>					
+        					<polyDegree>3</polyDegree>					
+        					<continueOnFail>false</continueOnFail>					
+      			</parameters>			
+    	</node>	<node id="Subset">			
+      			<operator>Subset</operator>			
+      			<sources>					
+        					<sourceProduct refid="Apply-Orbit-File"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands/>					
+        					<tiePointGrids/>					
+        					<region>0,0,71718,42035</region>					
+        					<referenceBand/>					
+        					<geoRegion>POLYGON ((-95.41 29.64 0,-95.14 29.64 0,-95.14 29.86 0,-95.41 29.86 0,-95.41 29.64 0))</geoRegion>					
+        					<subSamplingX>1</subSamplingX>					
+        					<subSamplingY>1</subSamplingY>					
+        					<fullSwath>false</fullSwath>					
+        					<vectorFile/>					
+        					<polygonRegion/>					
+        					<copyMetadata>true</copyMetadata>					
+      			</parameters>			
+    	</node>	<node id="Multilook">			
+      			<operator>Multilook</operator>			
+      			<sources>					
+        					<sourceProduct refid="Subset"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands/>					
+        					<nRgLooks>4</nRgLooks>					
+        					<nAzLooks>1</nAzLooks>					
+        					<outputIntensity>false</outputIntensity>					
+        					<grSquarePixel>true</grSquarePixel>					
+      			</parameters>			
+    	</node>	<node id="BandSelect">			
+      			<operator>BandSelect</operator>			
+      			<sources>					
+        					<sourceProduct refid="Multilook"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<selectedPolarisations/>					
+        					<selectedSubImages/>					
+        					<sourceBands>Beta0_VV,Beta0_VH</sourceBands>					
+        					<bandNamePattern/>					
+      			</parameters>			
+    	</node>	<node id="Terrain-Flattening">			
+      			<operator>Terrain-Flattening</operator>			
+      			<sources>					
+        					<sourceProduct refid="Multilook"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands>Beta0_VV,Beta0_VH</sourceBands>					
+        					<demName>Copernicus 30m Global DEM</demName>					
+        					<demResamplingMethod>BILINEAR_INTERPOLATION</demResamplingMethod>					
+        					<externalDEMFile/>					
+        					<externalDEMNoDataValue>0</externalDEMNoDataValue>					
+        					<externalDEMApplyEGM>true</externalDEMApplyEGM>					
+        					<outputSimulatedImage>false</outputSimulatedImage>					
+        					<outputSigma0>true</outputSigma0>					
+        					<nodataValueAtSea>true</nodataValueAtSea>					
+        					<additionalOverlap>0.1</additionalOverlap>					
+        					<oversamplingMultiple>2</oversamplingMultiple>					
+      			</parameters>			
+    	</node>	<node id="BandMerge (2)">			
+      			<operator>BandMerge</operator>			
+      			<sources>					
+        					<sourceProduct refid="Terrain-Flattening"/>					
+      					<sourceProduct.1 refid="BandSelect"/>						</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands/>					
+        					<geographicError>1.0E-5</geographicError>					
+      			</parameters>			
+    	</node>	<node id="BandMaths (2)">			
+      			<operator>BandMaths</operator>			
+      			<sources>					
+        					<sourceProduct refid="BandMerge (2)"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<targetBands>											<targetBand>									
+            									<name>scatteringArea_VV</name>									
+            									<type>float32</type>									
+            									<expression>Beta0_VV / Gamma0_VV</expression>									
+            									<description/>									
+            									<unit/>									
+            									<noDataValue>0.0</noDataValue>									
+            							</targetBand>							
+          					</targetBands>					
+        					<variables>			</variables>					
+      			</parameters>			
+    	</node>	<node id="BandMaths">			
+      			<operator>BandMaths</operator>			
+      			<sources>					
+        					<sourceProduct refid="Terrain-Flattening"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<targetBands>											<targetBand>									
+            									<name>gammaSigmaRatio_VV</name>									
+            									<type>float32</type>									
+            									<expression>Sigma0_VV / Gamma0_VV</expression>									
+            									<description/>									
+            									<unit/>									
+            									<noDataValue>0.0</noDataValue>									
+            							</targetBand>							
+          					</targetBands>					
+        					<variables>			</variables>					
+      			</parameters>			
+    	</node>	<node id="BandMerge">			
+      			<operator>BandMerge</operator>			
+      			<sources>					
+        					<sourceProduct refid="Multilook"/>					
+      					<sourceProduct.1 refid="Terrain-Flattening"/>							<sourceProduct.2 refid="BandMaths"/>			<sourceProduct.3 refid="BandMaths (2)"/>		</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands>Sigma0_VV::Subset_S1A_IW_SLC__1SDV_20240828T002651_20240828T002719_055406_06C201_F8B4_Cal_NR_Deb_Orb_ML,Sigma0_VH::Subset_S1A_IW_SLC__1SDV_20240828T002651_20240828T002719_055406_06C201_F8B4_Cal_NR_Deb_Orb_ML,Gamma0_VV::Subset_S1A_IW_SLC__1SDV_20240828T002651_20240828T002719_055406_06C201_F8B4_Cal_NR_Deb_Orb_ML_TF,Gamma0_VH::Subset_S1A_IW_SLC__1SDV_20240828T002651_20240828T002719_055406_06C201_F8B4_Cal_NR_Deb_Orb_ML_TF</sourceBands>					
+        					<geographicError>1.0E-5</geographicError>					
+      			</parameters>			
+    	</node>	<node id="Terrain-Correction">			
+      			<operator>Terrain-Correction</operator>			
+      			<sources>					
+        					<sourceProduct refid="BandMerge"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands>Sigma0_VV,Sigma0_VH,Gamma0_VV,Gamma0_VH,gammaSigmaRatio_VV,scatteringArea_VV</sourceBands>					
+        					<demName>Copernicus 30m Global DEM</demName>					
+        					<externalDEMFile/>					
+        					<externalDEMNoDataValue>0</externalDEMNoDataValue>					
+        					<externalDEMApplyEGM>true</externalDEMApplyEGM>					
+        					<demResamplingMethod>BILINEAR_INTERPOLATION</demResamplingMethod>					
+        					<imgResamplingMethod>BILINEAR_INTERPOLATION</imgResamplingMethod>					
+        					<pixelSpacingInMeter>20</pixelSpacingInMeter>					
+        					<pixelSpacingInDegree>0</pixelSpacingInDegree>					
+        					<mapProjection>GEOGCS[&quot;WGS84(DD)&quot;,DATUM[&quot;WGS84&quot;,SPHEROID[&quot;WGS84&quot;, 6378137.0, 298.257223563]],PRIMEM[&quot;Greenwich&quot;, 0.0],UNIT[&quot;degree&quot;, 0.017453292519943295],AXIS[&quot;Geodetic longitude&quot;, EAST],AXIS[&quot;Geodetic latitude&quot;, NORTH]]</mapProjection>					
+        					<alignToStandardGrid>false</alignToStandardGrid>					
+        					<standardGridOriginX>0</standardGridOriginX>					
+        					<standardGridOriginY>0</standardGridOriginY>					
+        					<nodataValueAtSea>true</nodataValueAtSea>					
+        					<saveDEM>true</saveDEM>					
+        					<saveLatLon>false</saveLatLon>					
+        					<saveIncidenceAngleFromEllipsoid>true</saveIncidenceAngleFromEllipsoid>					
+        					<saveLocalIncidenceAngle>true</saveLocalIncidenceAngle>					
+        					<saveProjectedLocalIncidenceAngle>true</saveProjectedLocalIncidenceAngle>					
+        					<saveSelectedSourceBand>true</saveSelectedSourceBand>					
+        					<saveLayoverShadowMask>true</saveLayoverShadowMask>					
+        					<outputComplex>false</outputComplex>					
+        					<applyRadiometricNormalization>false</applyRadiometricNormalization>					
+        					<saveSigmaNought>false</saveSigmaNought>					
+        					<saveGammaNought>false</saveGammaNought>					
+        					<saveBetaNought>false</saveBetaNought>					
+        					<incidenceAngleForSigma0>Use projected local incidence angle from DEM</incidenceAngleForSigma0>					
+        					<incidenceAngleForGamma0>Use projected local incidence angle from DEM</incidenceAngleForGamma0>					
+        					<auxFile>Latest Auxiliary File</auxFile>					
+        					<externalAuxFile/>					
+      			</parameters>			
+    	</node>	<node id="BandSelect (2)">			
+      			<operator>BandSelect</operator>			
+      			<sources>					
+        					<sourceProduct refid="Terrain-Correction"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<selectedPolarisations/>					
+        					<selectedSubImages/>					
+        					<sourceBands>elevation,incidenceAngleFromEllipsoid,localIncidenceAngle,projectedLocalIncidenceAngle,layoverShadowMask,gammaSigmaRatio_VV,scatteringArea_VV</sourceBands>					
+        					<bandNamePattern/>					
+      			</parameters>			
+    	</node>	<node id="Write (2)">			
+      			<operator>Write</operator>			
+      			<sources>					
+        					<sourceProduct refid="BandSelect (2)"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<file>/tmp/S1A__IW___A_20240828T002651_Cal_NR_Deb_Orb_ML_TF_TC_dB</file>					
+        					<formatName>ENVI</formatName>					
+        					<deleteOutputOnFailure>true</deleteOutputOnFailure>					
+        					<writeEntireTileRows>false</writeEntireTileRows>					
+        					<clearCacheAfterRowWrite>false</clearCacheAfterRowWrite>					
+      			</parameters>			
+    	</node>	<node id="LinearToFromdB">			
+      			<operator>LinearToFromdB</operator>			
+      			<sources>					
+        					<sourceProduct refid="Terrain-Correction"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<sourceBands>Sigma0_VV,Sigma0_VH,Gamma0_VV,Gamma0_VH</sourceBands>					
+      			</parameters>			
+    	</node>	<node id="Write">			
+      			<operator>Write</operator>			
+      			<sources>					
+        					<sourceProduct refid="LinearToFromdB"/>					
+      			</sources>			
+      			<parameters class="com.bc.ceres.binding.dom.XppDomElement">					
+        					<file>/tmp/S1A__IW___A_20240828T002651_Cal_NR_Deb_Orb_ML_TF_TC_dB</file>					
+        					<formatName>ENVI</formatName>					
+        					<deleteOutputOnFailure>true</deleteOutputOnFailure>					
+        					<writeEntireTileRows>false</writeEntireTileRows>					
+        					<clearCacheAfterRowWrite>false</clearCacheAfterRowWrite>					
+      			</parameters>			
+    	</node>	<applicationData id="Presentation">		
+        		<Description/>		
+    		<node id="Read">			<displayPosition x="5" y="20.0"/>		</node>		<node id="Calibration">			<displayPosition x="37" y="160.0"/>		</node>		<node id="ThermalNoiseRemoval">			<displayPosition x="125" y="20.0"/>		</node>		<node id="TOPSAR-Deburst">			<displayPosition x="277" y="160.0"/>		</node>		<node id="Apply-Orbit-File">			<displayPosition x="389" y="20.0"/>		</node>		<node id="Subset">			<displayPosition x="517" y="160.0"/>		</node>		<node id="Multilook">			<displayPosition x="565" y="20.0"/>		</node>		<node id="BandSelect">			<displayPosition x="637" y="160.0"/>		</node>		<node id="Terrain-Flattening">			<displayPosition x="717" y="20.0"/>		</node>		<node id="BandMerge (2)">			<displayPosition x="861" y="160.0"/>		</node>		<node id="BandMaths (2)">			<displayPosition x="965" y="20.0"/>		</node>		<node id="BandMaths">			<displayPosition x="1069" y="160.0"/>		</node>		<node id="BandMerge">			<displayPosition x="1141" y="20.0"/>		</node>		<node id="Terrain-Correction">			<displayPosition x="1213" y="160.0"/>		</node>		<node id="BandSelect (2)">			<displayPosition x="1357" y="20.0"/>		</node>		<node id="Write (2)">			<displayPosition x="1469" y="160.0"/>		</node>		<node id="LinearToFromdB">			<displayPosition x="1541" y="20.0"/>		</node>		<node id="Write">			<displayPosition x="1653" y="160.0"/>		</node>	</applicationData>	
+</graph>
