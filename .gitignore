@@ -46,6 +46,21 @@ __pycache__/
 .vscode/
 *.log
 *.tmp
+/coarse_coreg/
+/coarse_interferogram/
+/coarse_offsets/
+/ESD/
+/geom_reference/
+/mintpy_docker/
+/PICKLE/
+/reference/
+/secondary/
+/GMTSAR/
+/fine_coreg/
+/fine_interferogram/
+/fine_offsets/
+/merged/
+
 
 snap
 snap-conf-optimiser
@@ -87,3 +102,9 @@ houston_public_works_data/Stormdrain_Open_Drains/Stormdrain_Open_Drains.dbf
 houston_public_works_data/Stormdrain_Open_Drains/Stormdrain_Open_Drains.prj
 houston_public_works_data/Stormdrain_Open_Drains/Stormdrain_Open_Drains.shp
 houston_public_works_data/Stormdrain_Open_Drains/Stormdrain_Open_Drains.shx
+demLat_N28_N32_Lon_W098_W094.dem
+demLat_N28_N32_Lon_W098_W094.dem.vrt
+demLat_N28_N32_Lon_W098_W094.dem.wgs84
+demLat_N28_N32_Lon_W098_W094.dem.wgs84.vrt
+demLat_N28_N32_Lon_W098_W094.dem.wgs84.xml
+demLat_N28_N32_Lon_W098_W094.dem.xml
