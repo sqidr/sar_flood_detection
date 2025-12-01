@@ -14,9 +14,14 @@
       <property name="safe">['/home/st-juho/code_testing/S1B_IW_SLC__1SDV_20170830T122203_20170830T122233_007169_00CA2C_C92C.SAFE']</property>
     </component>
     
+    <!-- Process all swaths, ISCE will pick the one covering the ROI -->
     <property name="swaths">[1, 2, 3]</property>
     <property name="range looks">7</property>
     <property name="azimuth looks">3</property>
     <property name="do unwrap">False</property>
+    
+    <!-- THIS FORCES SUBSETTING -->
+    <property name="region of interest">[29.786186, 29.873121, -95.708479, -95.573593]</property>
+    
   </component>
 </topsApp>

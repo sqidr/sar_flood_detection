@@ -60,6 +60,8 @@ __pycache__/
 /fine_interferogram/
 /fine_offsets/
 /merged/
+*demLat*
+
 
 
 snap
