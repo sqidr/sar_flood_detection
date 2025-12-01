@@ -72,7 +72,7 @@
         <IW-2_Bperp_at_midrange_for_last_common_burst>5.014235560843381</IW-2_Bperp_at_midrange_for_last_common_burst>
     </baseline>
     <topo>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84.wgs84</Dem_Used>
+        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
         <Number_of_common_bursts_IW-1>3</Number_of_common_bursts_IW-1>
         <Number_of_lines_for_burst_0_-_IW-1>1492</Number_of_lines_for_burst_0_-_IW-1>
         <Number_of_pixels_for_bursts_0_-_IW-1>20512</Number_of_pixels_for_bursts_0_-_IW-1>
@@ -122,7 +122,7 @@
         <snr_threshold>8.0</snr_threshold>
     </esd>
     <geocode>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84.wgs84</Dem_Used>
+        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
         <Geocoding:_>merged/filt_topophase.flat</Geocoding:_>
         <Output_file:_>merged/filt_topophase.flat.geo</Output_file:_>
         <Width>6347</Width>
