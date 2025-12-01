@@ -22,6 +22,9 @@
     
     <!-- THIS FORCES SUBSETTING -->
     <property name="region of interest">[29.786186, 29.873121, -95.708479, -95.573593]</property>
+
+    <!-- Save DEM to a specific folder -->
+    <property name="demFilename">/home/st-juho/code_testing/dem_files/dem.wgs84</property>
     
   </component>
 </topsApp>

@@ -1,0 +1,123 @@
+<imageFile>
+    <property name="ISCE_VERSION">
+        <value>Release: 2.6.3, svn-, 20230418. Current: svn-.</value>
+    </property>
+    <property name="access_mode">
+        <value>read</value>
+        <doc>Image access mode.</doc>
+    </property>
+    <property name="byte_order">
+        <value>l</value>
+        <doc>Endianness of the image.</doc>
+    </property>
+    <component name="coordinate1">
+        <factorymodule>isceobj.Image</factorymodule>
+        <factoryname>createCoordinate</factoryname>
+        <doc>First coordinate of a 2D image (width).</doc>
+        <property name="delta">
+            <value>0.0002777777777777778</value>
+            <doc>Coordinate quantization.</doc>
+        </property>
+        <property name="endingvalue">
+            <value>-95.0</value>
+            <doc>Ending value of the coordinate.</doc>
+        </property>
+        <property name="family">
+            <value>imagecoordinate</value>
+            <doc>Instance family name</doc>
+        </property>
+        <property name="name">
+            <value>imagecoordinate_name</value>
+            <doc>Instance name</doc>
+        </property>
+        <property name="size">
+            <value>3600</value>
+            <doc>Coordinate size.</doc>
+        </property>
+        <property name="startingvalue">
+            <value>-96.0</value>
+            <doc>Starting value of the coordinate.</doc>
+        </property>
+    </component>
+    <component name="coordinate2">
+        <factorymodule>isceobj.Image</factorymodule>
+        <factoryname>createCoordinate</factoryname>
+        <doc>Second coordinate of a 2D image (length).</doc>
+        <property name="delta">
+            <value>-0.0002777777777777778</value>
+            <doc>Coordinate quantization.</doc>
+        </property>
+        <property name="endingvalue">
+            <value>29.0</value>
+            <doc>Ending value of the coordinate.</doc>
+        </property>
+        <property name="family">
+            <value>imagecoordinate</value>
+            <doc>Instance family name</doc>
+        </property>
+        <property name="name">
+            <value>imagecoordinate_name</value>
+            <doc>Instance name</doc>
+        </property>
+        <property name="size">
+            <value>3600</value>
+            <doc>Coordinate size.</doc>
+        </property>
+        <property name="startingvalue">
+            <value>30.0</value>
+            <doc>Starting value of the coordinate.</doc>
+        </property>
+    </component>
+    <property name="data_type">
+        <value>short</value>
+        <doc>Image data type.</doc>
+    </property>
+    <property name="extra_file_name">
+        <value>dem.wgs84.wgs84.vrt</value>
+        <doc>For example name of vrt metadata.</doc>
+    </property>
+    <property name="family">
+        <value>demimage</value>
+        <doc>Instance family name</doc>
+    </property>
+    <property name="file_name">
+        <value>dem.wgs84.wgs84</value>
+        <doc>Name of the image file.</doc>
+    </property>
+    <property name="image_type">
+        <value>dem</value>
+        <doc>Image type used for displaying.</doc>
+    </property>
+    <property name="length">
+        <value>3600</value>
+        <doc>Image length</doc>
+    </property>
+    <property name="name">
+        <value>demimage_name</value>
+        <doc>Instance name</doc>
+    </property>
+    <property name="number_bands">
+        <value>1</value>
+        <doc>Number of image bands.</doc>
+    </property>
+    <property name="reference">
+        <value>WGS84</value>
+        <doc>Geodetic datum</doc>
+    </property>
+    <property name="scheme">
+        <value>BIP</value>
+        <doc>Interleaving scheme of the image.</doc>
+    </property>
+    <property name="width">
+        <value>3600</value>
+        <doc>Image width</doc>
+    </property>
+    <property name="xmax">
+        <value>-95.0</value>
+        <doc>Maximum range value</doc>
+    </property>
+    <property name="xmin">
+        <value>-96.0</value>
+        <doc>Minimum range value</doc>
+    </property>
+</imageFile>
