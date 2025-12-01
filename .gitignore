@@ -62,7 +62,7 @@ __pycache__/
 /merged/
 *demLat*
 /dem_files/
-
+stratmap18*
 
 
 snap
@@ -112,3 +112,9 @@ demLat_N28_N32_Lon_W098_W094.dem.wgs84.vrt
 demLat_N28_N32_Lon_W098_W094.dem.wgs84.xml
 demLat_N28_N32_Lon_W098_W094.dem.xml
 MintPy-tutorial
+copernicus_30m_wgs84.tif.vrt
+copernicus_30m_wgs84.tif.xml
+texas_stratmap_wgs84.tif.wgs84
+MintPy-tutorial
+texas_stratmap_wgs84.tif.wgs84.vrt
+texas_stratmap_wgs84.tif.wgs84.xml

@@ -72,27 +72,27 @@
         <IW-2_Bperp_at_midrange_for_last_common_burst>5.014235560843381</IW-2_Bperp_at_midrange_for_last_common_burst>
     </baseline>
     <topo>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
+        <Dem_Used>texas_stratmap_wgs84.tif.wgs84</Dem_Used>
         <Number_of_common_bursts_IW-1>3</Number_of_common_bursts_IW-1>
         <Number_of_lines_for_burst_0_-_IW-1>1492</Number_of_lines_for_burst_0_-_IW-1>
         <Number_of_pixels_for_bursts_0_-_IW-1>20512</Number_of_pixels_for_bursts_0_-_IW-1>
-        <Bounding_box_for_burst_0_-_IW-1>[29.788797091373112, 30.11767331066144, -95.57822403692171, -94.65237675339144]</Bounding_box_for_burst_0_-_IW-1>
+        <Bounding_box_for_burst_0_-_IW-1>[29.788797091373112, 30.11767331066144, -95.57116645208241, -94.65237675339144]</Bounding_box_for_burst_0_-_IW-1>
         <Number_of_lines_for_burst_1_-_IW-1>1492</Number_of_lines_for_burst_1_-_IW-1>
         <Number_of_pixels_for_bursts_1_-_IW-1>20512</Number_of_pixels_for_bursts_1_-_IW-1>
-        <Bounding_box_for_burst_1_-_IW-1>[29.622624304333044, 29.952684510486357, -95.61363673181721, -94.68950594771982]</Bounding_box_for_burst_1_-_IW-1>
+        <Bounding_box_for_burst_1_-_IW-1>[29.622624304333044, 29.951552847557576, -95.61353024076143, -94.68950594771982]</Bounding_box_for_burst_1_-_IW-1>
         <Number_of_lines_for_burst_2_-_IW-1>1492</Number_of_lines_for_burst_2_-_IW-1>
         <Number_of_pixels_for_bursts_2_-_IW-1>20512</Number_of_pixels_for_bursts_2_-_IW-1>
-        <Bounding_box_for_burst_2_-_IW-1>[29.456443720005268, 29.786532531041654, -95.64899193748612, -94.72657978766425]</Bounding_box_for_burst_2_-_IW-1>
+        <Bounding_box_for_burst_2_-_IW-1>[29.456443720005268, 29.786513751460443, -95.64218898287778, -94.72657978766425]</Bounding_box_for_burst_2_-_IW-1>
         <Number_of_common_bursts_IW-2>3</Number_of_common_bursts_IW-2>
         <Number_of_lines_for_burst_0_-_IW-2>1504</Number_of_lines_for_burst_0_-_IW-2>
         <Number_of_pixels_for_bursts_0_-_IW-2>24500</Number_of_pixels_for_bursts_0_-_IW-2>
-        <Bounding_box_for_burst_0_-_IW-2>[29.872034911410367, 30.20219119244166, -96.4834077520268, -95.52073636172416]</Bounding_box_for_burst_0_-_IW-2>
+        <Bounding_box_for_burst_0_-_IW-2>[29.872033588833826, 30.20219119244166, -96.4834077520268, -95.52073636172416]</Bounding_box_for_burst_0_-_IW-2>
         <Number_of_lines_for_burst_1_-_IW-2>1504</Number_of_lines_for_burst_1_-_IW-2>
         <Number_of_pixels_for_bursts_1_-_IW-2>24500</Number_of_pixels_for_bursts_1_-_IW-2>
-        <Bounding_box_for_burst_1_-_IW-2>[29.70564316985417, 30.035911214967683, -96.51741451607168, -95.56338793913683]</Bounding_box_for_burst_1_-_IW-2>
+        <Bounding_box_for_burst_1_-_IW-2>[29.70453800179341, 30.035911214967683, -96.51741451607168, -95.55639451748806]</Bounding_box_for_burst_1_-_IW-2>
         <Number_of_lines_for_burst_2_-_IW-2>1504</Number_of_lines_for_burst_2_-_IW-2>
         <Number_of_pixels_for_bursts_2_-_IW-2>24500</Number_of_pixels_for_bursts_2_-_IW-2>
-        <Bounding_box_for_burst_2_-_IW-2>[29.539514533467184, 29.86987258140478, -96.55134196925763, -95.59884003878969]</Bounding_box_for_burst_2_-_IW-2>
+        <Bounding_box_for_burst_2_-_IW-2>[29.538398630086473, 29.86987258140478, -96.55134196925763, -95.591956970643]</Bounding_box_for_burst_2_-_IW-2>
         <Overall_bounding_box>[29.456443720005268, 30.20219119244166, -96.55134196925763, -94.65237675339144]</Overall_bounding_box>
     </topo>
     <subset>
@@ -114,24 +114,24 @@
         <Overlap_1_number_of_valid_lines_-_IW-2>117</Overlap_1_number_of_valid_lines_-_IW-2>
     </subset>
     <esd>
-        <Median>-0.0625</Median>
-        <Mean>-0.04818206261950287</Mean>
-        <Std>0.3077939372362077</Std>
+        <Median>-0.046875</Median>
+        <Mean>-0.04606874104156713</Mean>
+        <Std>0.3085139103277948</Std>
         <coherence_threshold>0.85</coherence_threshold>
-        <number_of_coherent_points>2092</number_of_coherent_points>
+        <number_of_coherent_points>2093</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>
     </esd>
     <geocode>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
+        <Dem_Used>texas_stratmap_wgs84.tif.wgs84</Dem_Used>
         <Geocoding:_>merged/filt_topophase.flat</Geocoding:_>
         <Output_file:_>merged/filt_topophase.flat.geo</Output_file:_>
         <Width>6347</Width>
         <Length>1549</Length>
         <Range_looks>7</Range_looks>
         <Azimuth_looks>3</Azimuth_looks>
-        <South>29.45638888888889</South>
-        <North>30.218333333333334</North>
-        <West>-96.6575</West>
-        <East>-94.65222222222222</East>
+        <South>29.456419377271693</South>
+        <North>30.218359377271696</North>
+        <West>-96.65765203395756</West>
+        <East>-94.65236203395756</East>
     </geocode>
 </topsProc>
