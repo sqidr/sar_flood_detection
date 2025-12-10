@@ -63,7 +63,7 @@ __pycache__/
 *demLat*
 /dem_files/
 stratmap18*
-
+/ion/
 
 snap
 snap-conf-optimiser
@@ -115,6 +115,5 @@ MintPy-tutorial
 copernicus_30m_wgs84.tif.vrt
 copernicus_30m_wgs84.tif.xml
 texas_stratmap_wgs84.tif.wgs84
-MintPy-tutorial
 texas_stratmap_wgs84.tif.wgs84.vrt
 texas_stratmap_wgs84.tif.wgs84.xml

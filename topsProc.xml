@@ -116,7 +116,7 @@
     <esd>
         <Median>-0.0625</Median>
         <Mean>-0.04817459369024857</Mean>
-        <Std>0.3077918834961093</Std>
+        <Std>0.30781956084846834</Std>
         <coherence_threshold>0.85</coherence_threshold>
         <number_of_coherent_points>2092</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>
@@ -125,10 +125,10 @@
         <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
         <Geocoding:_>merged/filt_topophase.flat</Geocoding:_>
         <Output_file:_>merged/filt_topophase.flat.geo</Output_file:_>
-        <Width>6347</Width>
-        <Length>1549</Length>
-        <Range_looks>7</Range_looks>
-        <Azimuth_looks>3</Azimuth_looks>
+        <Width>11108</Width>
+        <Length>4647</Length>
+        <Range_looks>4</Range_looks>
+        <Azimuth_looks>1</Azimuth_looks>
         <South>29.45638888888889</South>
         <North>30.218333333333334</North>
         <West>-96.6575</West>
