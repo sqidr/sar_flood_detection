@@ -116,7 +116,7 @@
     <esd>
         <Median>-0.0625</Median>
         <Mean>-0.04817459369024857</Mean>
-        <Std>0.30781956084846834</Std>
+        <Std>0.30779605421530937</Std>
         <coherence_threshold>0.85</coherence_threshold>
         <number_of_coherent_points>2092</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>

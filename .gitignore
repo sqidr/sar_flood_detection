@@ -64,6 +64,8 @@ __pycache__/
 /dem_files/
 stratmap18*
 /ion/
+/dem/
+/saved_results/
 
 snap
 snap-conf-optimiser
@@ -117,3 +119,7 @@ copernicus_30m_wgs84.tif.xml
 texas_stratmap_wgs84.tif.wgs84
 texas_stratmap_wgs84.tif.wgs84.vrt
 texas_stratmap_wgs84.tif.wgs84.xml
+ERA5_2017-09-19.grb
+ERA5_data.grib
+ERA5_2017-08-14.grb
+insar_coherence_triple_FAILED_EXPERIMENT.ipynb

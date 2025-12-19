@@ -15,9 +15,9 @@
   
     
     <property name="swaths">[1, 2, 3]</property>
-    <property name="do unwrap">True</property>
+    <property name="do unwrap">False</property>
     <property name="unwrapper name">snaphu_mcf</property>
-    <property name="do denseoffsets">True</property>
+    <property name="do denseoffsets">False</property>
 
     
     <property name="range looks">4</property>
