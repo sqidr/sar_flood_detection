@@ -66,6 +66,10 @@ stratmap18*
 /ion/
 /dem/
 /saved_results/
+/car_segmentation_data/
+/satellite_building_testing_saved/
+/satellite_buildings_segmentation_data/
+/car_segmentation_testing_saved_images/
 
 snap
 snap-conf-optimiser
