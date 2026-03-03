@@ -15,7 +15,7 @@
             <processingsystem>Sentinel-1 IPF</processingsystem>
             <processingsoftwareversion>002.82</processingsoftwareversion>
             <ascendingnodetime>2017-07-25 11:41:02.607483</ascendingnodetime>
-            <numberofbursts>3</numberofbursts>
+            <numberofbursts>4</numberofbursts>
             <family>topsswathslc</family>
             <name>topsswathslc_name</name>
         </sensor>
@@ -24,7 +24,7 @@
         <numberOfBursts_1>3</numberOfBursts_1>
         <burstWidth_2>24500</burstWidth_2>
         <burstLength_2>1504</burstLength_2>
-        <numberOfBursts_2>3</numberOfBursts_2>
+        <numberOfBursts_2>4</numberOfBursts_2>
     </reference>
     <secondary>
         <sensor>
@@ -34,18 +34,18 @@
             <mission>S1B</mission>
             <processingfacility>DLR-Oberpfaffenhofen, Germany</processingfacility>
             <processingsystem>Sentinel-1 IPF</processingsystem>
-            <processingsoftwareversion>002.84</processingsoftwareversion>
-            <ascendingnodetime>2017-08-30 11:41:04.323085</ascendingnodetime>
-            <numberofbursts>3</numberofbursts>
+            <processingsoftwareversion>002.82</processingsoftwareversion>
+            <ascendingnodetime>2017-08-06 11:41:03.230864</ascendingnodetime>
+            <numberofbursts>4</numberofbursts>
             <family>topsswathslc</family>
             <name>topsswathslc_name</name>
         </sensor>
-        <burstWidth_1>20627</burstWidth_1>
+        <burstWidth_1>20512</burstWidth_1>
         <burstLength_1>1492</burstLength_1>
         <numberOfBursts_1>3</numberOfBursts_1>
-        <burstWidth_2>24609</burstWidth_2>
+        <burstWidth_2>24500</burstWidth_2>
         <burstLength_2>1504</burstLength_2>
-        <numberOfBursts_2>3</numberOfBursts_2>
+        <numberOfBursts_2>4</numberOfBursts_2>
     </secondary>
     <baseline>
         <IW-1_Number_of_bursts_in_reference>3</IW-1_Number_of_bursts_in_reference>
@@ -55,21 +55,21 @@
         <IW-1_First_common_burst_in_secondary>0</IW-1_First_common_burst_in_secondary>
         <IW-1_Last_common_burst_in_secondary>3</IW-1_Last_common_burst_in_secondary>
         <IW-1_Number_of_common_bursts>3</IW-1_Number_of_common_bursts>
-        <IW-1_Bpar_at_midrange_for_first_common_burst>-12.67920582592181</IW-1_Bpar_at_midrange_for_first_common_burst>
-        <IW-1_Bperp_at_midrange_for_first_common_burst>6.513727491733507</IW-1_Bperp_at_midrange_for_first_common_burst>
-        <IW-1_Bpar_at_midrange_for_last_common_burst>-12.445339931623916</IW-1_Bpar_at_midrange_for_last_common_burst>
-        <IW-1_Bperp_at_midrange_for_last_common_burst>6.1089038461054885</IW-1_Bperp_at_midrange_for_last_common_burst>
-        <IW-2_Number_of_bursts_in_reference>3</IW-2_Number_of_bursts_in_reference>
+        <IW-1_Bpar_at_midrange_for_first_common_burst>40.963934513759604</IW-1_Bpar_at_midrange_for_first_common_burst>
+        <IW-1_Bperp_at_midrange_for_first_common_burst>-75.04647682509298</IW-1_Bperp_at_midrange_for_first_common_burst>
+        <IW-1_Bpar_at_midrange_for_last_common_burst>40.83526892571886</IW-1_Bpar_at_midrange_for_last_common_burst>
+        <IW-1_Bperp_at_midrange_for_last_common_burst>-74.79135168261453</IW-1_Bperp_at_midrange_for_last_common_burst>
+        <IW-2_Number_of_bursts_in_reference>4</IW-2_Number_of_bursts_in_reference>
         <IW-2_First_common_burst_in_reference>0</IW-2_First_common_burst_in_reference>
-        <IW-2_Last_common_burst_in_reference>3</IW-2_Last_common_burst_in_reference>
-        <IW-2_Number_of_bursts_in_secondary>3</IW-2_Number_of_bursts_in_secondary>
+        <IW-2_Last_common_burst_in_reference>4</IW-2_Last_common_burst_in_reference>
+        <IW-2_Number_of_bursts_in_secondary>4</IW-2_Number_of_bursts_in_secondary>
         <IW-2_First_common_burst_in_secondary>0</IW-2_First_common_burst_in_secondary>
-        <IW-2_Last_common_burst_in_secondary>3</IW-2_Last_common_burst_in_secondary>
-        <IW-2_Number_of_common_bursts>3</IW-2_Number_of_common_bursts>
-        <IW-2_Bpar_at_midrange_for_first_common_burst>-13.11899659612928</IW-2_Bpar_at_midrange_for_first_common_burst>
-        <IW-2_Bperp_at_midrange_for_first_common_burst>5.3988756744064785</IW-2_Bperp_at_midrange_for_first_common_burst>
-        <IW-2_Bpar_at_midrange_for_last_common_burst>-12.852730430945183</IW-2_Bpar_at_midrange_for_last_common_burst>
-        <IW-2_Bperp_at_midrange_for_last_common_burst>5.014235560843381</IW-2_Bperp_at_midrange_for_last_common_burst>
+        <IW-2_Last_common_burst_in_secondary>4</IW-2_Last_common_burst_in_secondary>
+        <IW-2_Number_of_common_bursts>4</IW-2_Number_of_common_bursts>
+        <IW-2_Bpar_at_midrange_for_first_common_burst>46.880983736798946</IW-2_Bpar_at_midrange_for_first_common_burst>
+        <IW-2_Bperp_at_midrange_for_first_common_burst>-71.440629968744</IW-2_Bperp_at_midrange_for_first_common_burst>
+        <IW-2_Bpar_at_midrange_for_last_common_burst>46.65443214751241</IW-2_Bpar_at_midrange_for_last_common_burst>
+        <IW-2_Bperp_at_midrange_for_last_common_burst>-71.07431968719989</IW-2_Bperp_at_midrange_for_last_common_burst>
     </baseline>
     <topo>
         <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
@@ -83,7 +83,7 @@
         <Number_of_lines_for_burst_2_-_IW-1>1492</Number_of_lines_for_burst_2_-_IW-1>
         <Number_of_pixels_for_bursts_2_-_IW-1>20512</Number_of_pixels_for_bursts_2_-_IW-1>
         <Bounding_box_for_burst_2_-_IW-1>[29.456443720005268, 29.786532531041654, -95.64899193748612, -94.72657978766425]</Bounding_box_for_burst_2_-_IW-1>
-        <Number_of_common_bursts_IW-2>3</Number_of_common_bursts_IW-2>
+        <Number_of_common_bursts_IW-2>4</Number_of_common_bursts_IW-2>
         <Number_of_lines_for_burst_0_-_IW-2>1504</Number_of_lines_for_burst_0_-_IW-2>
         <Number_of_pixels_for_bursts_0_-_IW-2>24500</Number_of_pixels_for_bursts_0_-_IW-2>
         <Bounding_box_for_burst_0_-_IW-2>[29.872034911410367, 30.20219119244166, -96.4834077520268, -95.52073636172416]</Bounding_box_for_burst_0_-_IW-2>
@@ -93,7 +93,10 @@
         <Number_of_lines_for_burst_2_-_IW-2>1504</Number_of_lines_for_burst_2_-_IW-2>
         <Number_of_pixels_for_bursts_2_-_IW-2>24500</Number_of_pixels_for_bursts_2_-_IW-2>
         <Bounding_box_for_burst_2_-_IW-2>[29.539514533467184, 29.86987258140478, -96.55134196925763, -95.59884003878969]</Bounding_box_for_burst_2_-_IW-2>
-        <Overall_bounding_box>[29.456443720005268, 30.20219119244166, -96.55134196925763, -94.65237675339144]</Overall_bounding_box>
+        <Number_of_lines_for_burst_3_-_IW-2>1504</Number_of_lines_for_burst_3_-_IW-2>
+        <Number_of_pixels_for_bursts_3_-_IW-2>24500</Number_of_pixels_for_bursts_3_-_IW-2>
+        <Bounding_box_for_burst_3_-_IW-2>[29.373227602313055, 29.70370394582981, -96.58526654472097, -95.6343362408337]</Bounding_box_for_burst_3_-_IW-2>
+        <Overall_bounding_box>[29.373227602313055, 30.20219119244166, -96.58526654472097, -94.65237675339144]</Overall_bounding_box>
     </topo>
     <subset>
         <Overlap_0_start_time_-_IW-1>2017-07-25 12:22:18.635037</Overlap_0_start_time_-_IW-1>
@@ -112,13 +115,17 @@
         <Overlap_1_stop_time_-_IW-2>2017-07-25 12:22:22.672149</Overlap_1_stop_time_-_IW-2>
         <Overlap_1_number_of_lines_-_IW-2>163</Overlap_1_number_of_lines_-_IW-2>
         <Overlap_1_number_of_valid_lines_-_IW-2>117</Overlap_1_number_of_valid_lines_-_IW-2>
+        <Overlap_2_start_time_-_IW-2>2017-07-25 12:22:25.097705</Overlap_2_start_time_-_IW-2>
+        <Overlap_2_stop_time_-_IW-2>2017-07-25 12:22:25.428650</Overlap_2_stop_time_-_IW-2>
+        <Overlap_2_number_of_lines_-_IW-2>162</Overlap_2_number_of_lines_-_IW-2>
+        <Overlap_2_number_of_valid_lines_-_IW-2>116</Overlap_2_number_of_valid_lines_-_IW-2>
     </subset>
     <esd>
-        <Median>-0.0625</Median>
-        <Mean>-0.04817459369024857</Mean>
-        <Std>0.30779605421530937</Std>
+        <Median>0.015625</Median>
+        <Mean>0.0041308564040158195</Mean>
+        <Std>0.2506808037015746</Std>
         <coherence_threshold>0.85</coherence_threshold>
-        <number_of_coherent_points>2092</number_of_coherent_points>
+        <number_of_coherent_points>3287</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>
     </esd>
     <geocode>
@@ -126,12 +133,12 @@
         <Geocoding:_>merged/filt_topophase.flat</Geocoding:_>
         <Output_file:_>merged/filt_topophase.flat.geo</Output_file:_>
         <Width>11108</Width>
-        <Length>4647</Length>
+        <Length>5989</Length>
         <Range_looks>4</Range_looks>
         <Azimuth_looks>1</Azimuth_looks>
-        <South>29.45638888888889</South>
+        <South>29.371944444444445</South>
         <North>30.218333333333334</North>
-        <West>-96.6575</West>
+        <West>-96.6913888888889</West>
         <East>-94.65222222222222</East>
     </geocode>
 </topsProc>

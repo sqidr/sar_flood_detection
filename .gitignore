@@ -71,6 +71,13 @@ stratmap18*
 /satellite_buildings_segmentation_data/
 /car_segmentation_testing_saved_images/
 
+/dataset_downscaled_pngs/
+/dataset_pngs/
+/dataset_tiled/
+/saved_images/
+amplitude.png
+
+
 snap
 snap-conf-optimiser
 testing_quicklook.kmz
