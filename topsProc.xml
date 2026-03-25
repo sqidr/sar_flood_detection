@@ -72,31 +72,31 @@
         <IW-2_Bperp_at_midrange_for_last_common_burst>-71.07431968719989</IW-2_Bperp_at_midrange_for_last_common_burst>
     </baseline>
     <topo>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
+        <Dem_Used>dem_10m.wgs84.wgs84</Dem_Used>
         <Number_of_common_bursts_IW-1>3</Number_of_common_bursts_IW-1>
         <Number_of_lines_for_burst_0_-_IW-1>1492</Number_of_lines_for_burst_0_-_IW-1>
         <Number_of_pixels_for_bursts_0_-_IW-1>20512</Number_of_pixels_for_bursts_0_-_IW-1>
-        <Bounding_box_for_burst_0_-_IW-1>[29.788797091373112, 30.11767331066144, -95.57822403692171, -94.65237675339144]</Bounding_box_for_burst_0_-_IW-1>
+        <Bounding_box_for_burst_0_-_IW-1>[29.788797091373112, 30.11767331066144, -95.57815692116002, -94.65237675339144]</Bounding_box_for_burst_0_-_IW-1>
         <Number_of_lines_for_burst_1_-_IW-1>1492</Number_of_lines_for_burst_1_-_IW-1>
         <Number_of_pixels_for_bursts_1_-_IW-1>20512</Number_of_pixels_for_bursts_1_-_IW-1>
-        <Bounding_box_for_burst_1_-_IW-1>[29.622624304333044, 29.952684510486357, -95.61363673181721, -94.68950594771982]</Bounding_box_for_burst_1_-_IW-1>
+        <Bounding_box_for_burst_1_-_IW-1>[29.622624304333044, 29.951552847557576, -95.61351834518918, -94.68950594771982]</Bounding_box_for_burst_1_-_IW-1>
         <Number_of_lines_for_burst_2_-_IW-1>1492</Number_of_lines_for_burst_2_-_IW-1>
         <Number_of_pixels_for_bursts_2_-_IW-1>20512</Number_of_pixels_for_bursts_2_-_IW-1>
-        <Bounding_box_for_burst_2_-_IW-1>[29.456443720005268, 29.786532531041654, -95.64899193748612, -94.72657978766425]</Bounding_box_for_burst_2_-_IW-1>
+        <Bounding_box_for_burst_2_-_IW-1>[29.456443720005268, 29.786516592513482, -95.64218898287778, -94.72657978766425]</Bounding_box_for_burst_2_-_IW-1>
         <Number_of_common_bursts_IW-2>4</Number_of_common_bursts_IW-2>
         <Number_of_lines_for_burst_0_-_IW-2>1504</Number_of_lines_for_burst_0_-_IW-2>
         <Number_of_pixels_for_bursts_0_-_IW-2>24500</Number_of_pixels_for_bursts_0_-_IW-2>
-        <Bounding_box_for_burst_0_-_IW-2>[29.872034911410367, 30.20219119244166, -96.4834077520268, -95.52073636172416]</Bounding_box_for_burst_0_-_IW-2>
+        <Bounding_box_for_burst_0_-_IW-2>[29.872032743690667, 30.20219119244166, -96.4834077520268, -95.52073636172416]</Bounding_box_for_burst_0_-_IW-2>
         <Number_of_lines_for_burst_1_-_IW-2>1504</Number_of_lines_for_burst_1_-_IW-2>
         <Number_of_pixels_for_bursts_1_-_IW-2>24500</Number_of_pixels_for_bursts_1_-_IW-2>
-        <Bounding_box_for_burst_1_-_IW-2>[29.70564316985417, 30.035911214967683, -96.51741451607168, -95.56338793913683]</Bounding_box_for_burst_1_-_IW-2>
+        <Bounding_box_for_burst_1_-_IW-2>[29.70563437348894, 30.035911214967683, -96.51741451607168, -95.5633289460834]</Bounding_box_for_burst_1_-_IW-2>
         <Number_of_lines_for_burst_2_-_IW-2>1504</Number_of_lines_for_burst_2_-_IW-2>
         <Number_of_pixels_for_bursts_2_-_IW-2>24500</Number_of_pixels_for_bursts_2_-_IW-2>
-        <Bounding_box_for_burst_2_-_IW-2>[29.539514533467184, 29.86987258140478, -96.55134196925763, -95.59884003878969]</Bounding_box_for_burst_2_-_IW-2>
+        <Bounding_box_for_burst_2_-_IW-2>[29.538398630086473, 29.86987258140478, -96.55134196925763, -95.59880226459843]</Bounding_box_for_burst_2_-_IW-2>
         <Number_of_lines_for_burst_3_-_IW-2>1504</Number_of_lines_for_burst_3_-_IW-2>
         <Number_of_pixels_for_bursts_3_-_IW-2>24500</Number_of_pixels_for_bursts_3_-_IW-2>
-        <Bounding_box_for_burst_3_-_IW-2>[29.373227602313055, 29.70370394582981, -96.58526654472097, -95.6343362408337]</Bounding_box_for_burst_3_-_IW-2>
-        <Overall_bounding_box>[29.373227602313055, 30.20219119244166, -96.58526654472097, -94.65237675339144]</Overall_bounding_box>
+        <Bounding_box_for_burst_3_-_IW-2>[29.372128481676143, 29.70370394582981, -96.58526654472097, -95.62750391287001]</Bounding_box_for_burst_3_-_IW-2>
+        <Overall_bounding_box>[29.372128481676143, 30.20219119244166, -96.58526654472097, -94.65237675339144]</Overall_bounding_box>
     </topo>
     <subset>
         <Overlap_0_start_time_-_IW-1>2017-07-25 12:22:18.635037</Overlap_0_start_time_-_IW-1>
@@ -121,24 +121,24 @@
         <Overlap_2_number_of_valid_lines_-_IW-2>116</Overlap_2_number_of_valid_lines_-_IW-2>
     </subset>
     <esd>
-        <Median>0.015625</Median>
-        <Mean>0.0041308564040158195</Mean>
-        <Std>0.2506808037015746</Std>
+        <Median>0.0</Median>
+        <Mean>-0.005089421613394216</Mean>
+        <Std>0.2503647151194322</Std>
         <coherence_threshold>0.85</coherence_threshold>
-        <number_of_coherent_points>3287</number_of_coherent_points>
+        <number_of_coherent_points>3285</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>
     </esd>
     <geocode>
-        <Dem_Used>/home/st-juho/code_testing/dem_files/dem.wgs84</Dem_Used>
+        <Dem_Used>dem_10m.wgs84.wgs84</Dem_Used>
         <Geocoding:_>merged/filt_topophase.flat</Geocoding:_>
         <Output_file:_>merged/filt_topophase.flat.geo</Output_file:_>
         <Width>11108</Width>
         <Length>5989</Length>
         <Range_looks>4</Range_looks>
         <Azimuth_looks>1</Azimuth_looks>
-        <South>29.371944444444445</South>
-        <North>30.218333333333334</North>
-        <West>-96.6913888888889</West>
-        <East>-94.65222222222222</East>
+        <South>29.372079582326602</South>
+        <North>30.2183755182089</North>
+        <West>-96.69134709875642</West>
+        <East>-94.65236648562032</East>
     </geocode>
 </topsProc>

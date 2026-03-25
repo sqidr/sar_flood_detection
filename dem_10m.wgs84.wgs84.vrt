@@ -1,0 +1,11 @@
+<VRTDataset rasterXSize="3780" rasterYSize="3240">
+    <SRS>EPSG:4326</SRS>
+    <GeoTransform>-95.79995858948521, 9.259255315998887e-05, 0.0, 29.949949706598094, 0.0, -9.259255315998887e-05</GeoTransform>
+    <VRTRasterBand dataType="Int16" band="1" subClass="VRTRawRasterBand">
+        <SourceFilename relativeToVRT="1">dem_10m.wgs84.wgs84</SourceFilename>
+        <ByteOrder>LSB</ByteOrder>
+        <ImageOffset>0</ImageOffset>
+        <PixelOffset>2</PixelOffset>
+        <LineOffset>7560</LineOffset>
+    </VRTRasterBand>
+</VRTDataset>

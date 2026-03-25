@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <topsApp>
   <component name="topsinsar">
     <component name="reference">
@@ -26,7 +27,7 @@
     <property name="apply ionosphere correction">False</property>
 
     <property name="region of interest">[29.7, 29.9, -95.75, -95.5]</property>
-    <property name="demFilename">/home/st-juho/code_testing/dem_files/dem.wgs84</property>
+    <property name="demFilename">/home/st-juho/code_testing/dem_10m.wgs84</property>
     
   </component>
 </topsApp>
