@@ -76,6 +76,10 @@ stratmap18*
 /dataset_tiled/
 /saved_images/
 amplitude.png
+coherence_vh.png
+coherence_vv.png
+/merged_vh/
+/merged_vv/
 
 
 snap
