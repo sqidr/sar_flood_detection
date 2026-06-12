@@ -32,10 +32,10 @@
             <folder>None</folder>
             <spacecraftname>Sentinel-1</spacecraftname>
             <mission>S1B</mission>
-            <processingfacility>DLR-Oberpfaffenhofen, Germany</processingfacility>
+            <processingfacility>Airbus DS-Newport, United Kingdom</processingfacility>
             <processingsystem>Sentinel-1 IPF</processingsystem>
             <processingsoftwareversion>002.82</processingsoftwareversion>
-            <ascendingnodetime>2017-08-06 11:41:03.230864</ascendingnodetime>
+            <ascendingnodetime>2017-07-25 11:41:02.607483</ascendingnodetime>
             <numberofbursts>4</numberofbursts>
             <family>topsswathslc</family>
             <name>topsswathslc_name</name>
@@ -55,10 +55,10 @@
         <IW-1_First_common_burst_in_secondary>0</IW-1_First_common_burst_in_secondary>
         <IW-1_Last_common_burst_in_secondary>3</IW-1_Last_common_burst_in_secondary>
         <IW-1_Number_of_common_bursts>3</IW-1_Number_of_common_bursts>
-        <IW-1_Bpar_at_midrange_for_first_common_burst>40.963934513759604</IW-1_Bpar_at_midrange_for_first_common_burst>
-        <IW-1_Bperp_at_midrange_for_first_common_burst>-75.04647682509298</IW-1_Bperp_at_midrange_for_first_common_burst>
-        <IW-1_Bpar_at_midrange_for_last_common_burst>40.83526892571886</IW-1_Bpar_at_midrange_for_last_common_burst>
-        <IW-1_Bperp_at_midrange_for_last_common_burst>-74.79135168261453</IW-1_Bperp_at_midrange_for_last_common_burst>
+        <IW-1_Bpar_at_midrange_for_first_common_burst>nan</IW-1_Bpar_at_midrange_for_first_common_burst>
+        <IW-1_Bperp_at_midrange_for_first_common_burst>nan</IW-1_Bperp_at_midrange_for_first_common_burst>
+        <IW-1_Bpar_at_midrange_for_last_common_burst>nan</IW-1_Bpar_at_midrange_for_last_common_burst>
+        <IW-1_Bperp_at_midrange_for_last_common_burst>nan</IW-1_Bperp_at_midrange_for_last_common_burst>
         <IW-2_Number_of_bursts_in_reference>4</IW-2_Number_of_bursts_in_reference>
         <IW-2_First_common_burst_in_reference>0</IW-2_First_common_burst_in_reference>
         <IW-2_Last_common_burst_in_reference>4</IW-2_Last_common_burst_in_reference>
@@ -66,10 +66,10 @@
         <IW-2_First_common_burst_in_secondary>0</IW-2_First_common_burst_in_secondary>
         <IW-2_Last_common_burst_in_secondary>4</IW-2_Last_common_burst_in_secondary>
         <IW-2_Number_of_common_bursts>4</IW-2_Number_of_common_bursts>
-        <IW-2_Bpar_at_midrange_for_first_common_burst>46.880983736798946</IW-2_Bpar_at_midrange_for_first_common_burst>
-        <IW-2_Bperp_at_midrange_for_first_common_burst>-71.440629968744</IW-2_Bperp_at_midrange_for_first_common_burst>
-        <IW-2_Bpar_at_midrange_for_last_common_burst>46.65443214751241</IW-2_Bpar_at_midrange_for_last_common_burst>
-        <IW-2_Bperp_at_midrange_for_last_common_burst>-71.07431968719989</IW-2_Bperp_at_midrange_for_last_common_burst>
+        <IW-2_Bpar_at_midrange_for_first_common_burst>nan</IW-2_Bpar_at_midrange_for_first_common_burst>
+        <IW-2_Bperp_at_midrange_for_first_common_burst>nan</IW-2_Bperp_at_midrange_for_first_common_burst>
+        <IW-2_Bpar_at_midrange_for_last_common_burst>nan</IW-2_Bpar_at_midrange_for_last_common_burst>
+        <IW-2_Bperp_at_midrange_for_last_common_burst>nan</IW-2_Bperp_at_midrange_for_last_common_burst>
     </baseline>
     <topo>
         <Dem_Used>dem_10m.wgs84.wgs84</Dem_Used>
@@ -122,10 +122,10 @@
     </subset>
     <esd>
         <Median>0.0</Median>
-        <Mean>-0.0051036910197869104</Mean>
-        <Std>0.2503794149475731</Std>
+        <Mean>-0.0005208333333333333</Mean>
+        <Std>0.004780987814353238</Std>
         <coherence_threshold>0.85</coherence_threshold>
-        <number_of_coherent_points>3285</number_of_coherent_points>
+        <number_of_coherent_points>4560</number_of_coherent_points>
         <snr_threshold>8.0</snr_threshold>
     </esd>
     <geocode>

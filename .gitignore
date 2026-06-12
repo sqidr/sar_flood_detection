@@ -138,3 +138,7 @@ ERA5_2017-09-19.grb
 ERA5_data.grib
 ERA5_2017-08-14.grb
 insar_coherence_triple_FAILED_EXPERIMENT.ipynb
+magnitude.png
+coherence.png
+MintPy-tutorial
+slice_dataset_outd.ipynb

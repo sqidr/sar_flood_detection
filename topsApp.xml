@@ -6,14 +6,14 @@
       <property name="auxiliary data directory">/home/st-juho/code_testing/aux</property>
       <property name="output directory">reference</property>
       <property name="safe">['/home/st-juho/code_testing/S1B_IW_SLC__1SDV_20170725T122204_20170725T122234_006644_00BAFB_0D34.SAFE']</property>
-      <property name="polarization">vh</property>
+      <property name="polarization">vv</property>
     </component>
     <component name="secondary">
       <property name="orbit directory">/home/st-juho/code_testing/orbits</property>
       <property name="auxiliary data directory">/home/st-juho/code_testing/aux</property>
       <property name="output directory">secondary</property>
-      <property name="safe">['/home/st-juho/code_testing/S1B_IW_SLC__1SDV_20170806T122205_20170806T122235_006819_00C006_7CF2.SAFE']</property>
-      <property name="polarization">vh</property>
+      <property name="safe">['/home/st-juho/code_testing/S1B_IW_SLC__1SDV_20170725T122204_20170725T122234_006644_00BAFB_0D34.SAFE']</property>
+      <property name="polarization">vv</property>
     </component>
   
     <property name="swaths">[1, 2, 3]</property>
