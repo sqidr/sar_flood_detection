@@ -1,0 +1,2 @@
+,Mean Acc (%),Std Acc (%),Mean Dice,Std Dice,Mean Precision,Mean Recall,Mean F1 Score,Std F1 Score,Mean Kappa
+all_features_included,88.38,0.0,0.8736,0.0,0.8685,0.8787,0.8736,0.0,0.7662

@@ -1,0 +1,2 @@
+Feature Profile,Round Index,Random Seed,Accuracy (%),Dice Score,Precision,Recall,F1 Score,Cohen's Kappa
+all_features_included,1,42,88.38,0.8736,0.8685,0.8787,0.8736,0.7662
